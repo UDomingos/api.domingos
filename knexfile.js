@@ -24,7 +24,7 @@ production:{
   client:"pg",
   connection: {
     connectionString: process.env.DATABASE_URL,
-    ssl:{ rejectUnauthhorized: false },
+    ssl:{ rejectUnauthorized: false },
   },
   migrations:{
     directory:'./database/migrations',
